@@ -20,12 +20,12 @@ tell application "System Preferences"
 end tell
 
 tell application "System Events" to tell process "System Preferences"
-	
+
 	if answer is equal to "OK" then
 		if GPUto is equal to "Higher Performance" then
-			click radio button "Higher performance" of radio group 1 of window 1
+			click radio button "Higher performance" of radio group 1 of group 1 of window 1
 		else
-			click radio button "Better battery life" of radio group 1 of window 1
+			click radio button "Better battery life" of radio group 1 of group 1 of window 1
 		end if
 		delay 0.5
 		keystroke return
